@@ -9,4 +9,12 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "javiorfo/nvim-soil",
+    lazy = true,
+    ft = "plantuml",
+    config = function()
+      -- code
+    end,
+  },
 }

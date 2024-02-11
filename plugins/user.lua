@@ -15,6 +15,19 @@ return {
     ft = "plantuml",
     config = function()
       -- code
+      require("soil").setup {
+        image = {
+          formate = "png",
+          execute_to_open = function(img) return "feh " .. img end,
+        },
+      }
+    end,
+  },
+  {
+    "roobert/hoversplit.nvim",
+    config = function()
+      -- test dignostics
+      require("hoversplit").setup()
     end,
   },
 }
